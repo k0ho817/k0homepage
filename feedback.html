@@ -3,6 +3,33 @@
 <head>
     <title>kyoungho's homepage - home</title>
     <meta charset="utf-8">
+    <style>
+        .preset a{
+        text-decoration:none;
+        color:black;
+        }
+        h1{
+        text-align:center;
+        border-bottom:10px gray solid;
+        padding-top:50px;
+        margin:0;
+        font-size:70px;
+        }
+        ol{
+        border-right:5px gray solid;
+        width:200px;
+        margin:0;
+        padding-top:30px;
+        font-size:20px
+        }
+        #grid{
+        display:grid;
+        grid-template-columns:245px 1fr;
+        }
+        #a{
+        padding:30px;
+        }
+    </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145174923-1"></script>
 <script>
@@ -16,49 +43,52 @@
 
 </head>
 <body>
-<h1><a href="home.html">Kyoungho's homepage</a></h1>
-<h3>목차</h3>
-<ol>
-    <li><a href="1.html">자기소개</a></li>
-    <li><a href="version.html">사이트 발전 과정</a> </li>
-    <li><a href="feedback.html">피드백</a> </li>
-</ol>
-<h2>피드백</h2>
-제 사이트를 위해 피드백을 해주세요 ! 피드백은 언제나 환영입니다 !
-<img src="https://cdn.pixabay.com/photo/2017/03/19/03/40/avatar-2155431_960_720.png" width="100%">
-<p>
-    <div id="disqus_thread"></div>
-<script>
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://web1-xflll7xusy.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</p>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5d48dcf6e5ae967ef80e9aad/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+<h1 class="preset"><a href="home.html">Kyoungho's homepage</a></h1>
+<div id="grid">
+    <ol class="preset">
+        <li><a href="1.html"><p>about me</p></a></li>
+        <li><a href="version.html"><p>develope</a> </li>
+        <li><a href="feedback.html"><p>feedback</p></a> </li>
+    </ol>
+    <div id="a">
+        <h2>feedback</h2>
+        제 사이트를 위해 피드백을 해주세요 ! 피드백은 언제나 환영입니다 !
+        <img src="https://cdn.pixabay.com/photo/2017/03/19/03/40/avatar-2155431_960_720.png" width="100%">
+        <p>
+            <div id="disqus_thread"></div>
+        <script>
+        /**
+        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+        /*
+        var disqus_config = function () {
+        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        */
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://web1-xflll7xusy.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        </p>
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5d48dcf6e5ae967ef80e9aad/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+        </script>
+        <!--End of Tawk.to Script-->
+    </div>
+</div>
 </body>
 </html>

@@ -3,6 +3,33 @@
 <head>
     <title>kyoungho's homepage - home</title>
     <meta charset="utf-8">
+    <style>
+        .preset a{
+        text-decoration:none;
+        color:black;
+        }
+        h1{
+        text-align:center;
+        border-bottom:10px gray solid;
+        padding-top:50px;
+        margin:0;
+        font-size:70px;
+        }
+        ol{
+        border-right:5px gray solid;
+        width:200px;
+        margin:0;
+        padding-top:30px;
+        font-size:20px
+        }
+        #grid{
+        display:grid;
+        grid-template-columns:245px 1fr;
+        }
+        #a{
+        padding:30px;
+        }
+    </style>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145174923-1"></script>
 <script>
@@ -12,22 +39,30 @@
 
   gtag('config', 'UA-145174923-1');
 </script>
-
-
 </head>
+
 <body>
-<h1><a href="home.html">Kyoungho's homepage</a></h1>
-<h3>목차</h3>
-<ol>
-    <li><a href="1.html">자기소개</a></li>
-    <li><a href="version.html">사이트 발전 과정</a> </li>
-    <li><a href="feedback.html">피드백</a> </li>
-</ol>
-<p>제 홈페이지에 오신것을 환영합니다 !</p>
-<p>이 사이트에서는 간단한 자기 소개와 본 사이트의 발전 과정을 주기적으로 게시하도록 하겠습니다 </p>
-<p>자세한 소스는 github에 게시하겠습니다<a href="https://github.com/k0honmono817/k0homepage">https://github.com/k0honmono817/k0homepage</a> </p>
-<p>궁금하신 점이 있다면 우측 하단에 실시간 채팅을 이용해 주세요</p>
-<img src="hello.jpg" width="100%">
+<h1 class="preset">
+    <a href="home.html">
+        Kyoungho's homepage
+    </a>
+</h1>
+<div id="grid">
+    <ol class="preset">
+        <p><li><a href="1.html">about me</a></li></p>
+        <p><li><a href="version.html">develop</a> </li></p>
+        <p><li><a href="feedback.html">feedback</a> </li></p>
+    </ol>
+
+    <div id="a">
+        <img src="https://cdn.pixabay.com/photo/2016/12/14/19/20/hello-1907233_960_720.png" width="700px">
+        <p>제 홈페이지에 오신것을 환영합니다 !</p>
+        <p>이 사이트에서는 간단한 자기 소개와 본 사이트의 발전 과정을 주기적으로 게시하도록 하겠습니다 </p>
+        <p>자세한 소스는 github에 게시하겠습니다<a href="https://github.com/k0honmono817/k0homepage">https://github.com/k0honmono817/k0homepage</a> </p>
+        <p>궁금하신 점이 있다면 우측 하단에 실시간 채팅을 이용해 주세요</p>
+
+    </div>
+</div>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
