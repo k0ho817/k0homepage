@@ -1,0 +1,35 @@
+    .preset a{
+        text-decoration:none;
+        color:black;
+        }
+    h1{
+        text-align:center;
+        border-bottom:10px gray solid;
+        padding-top:50px;
+        margin:0;
+        font-size:70px;
+    }
+    ol{
+        border-right:5px gray solid;
+        width:200px;
+        margin:0;
+        padding-top:30px;
+        font-size:20px;
+        display:inline-block;
+        height:100%;
+    }
+    #grid{
+        display:grid;
+        grid-template-columns:245px 1fr;
+    }
+    #a{
+        padding:30px;
+    }
+        html, body{
+        margin:0;
+        height:100%;
+        background-image:url("back.jpg");
+    }
+    div{
+        height:100%;
+    }
