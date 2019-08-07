@@ -15,7 +15,7 @@
         margin:0;
         padding-top:30px;
         font-size:20px;
-        display:inline-block;
+        display:inline;
         height:100%;
     }
     #grid{
@@ -25,11 +25,41 @@
     #a{
         padding:30px;
     }
-        html, body{
+    html, body{
         margin:0;
         height:100%;
         background-image:url("back.jpg");
     }
     div{
         height:100%;
+    }
+    img{
+        width:700px;
+    }
+
+    @font-face {
+        font-family: ManumGothic;
+        src:local (NanumGothic.woff) format('woff'),
+            local (NanumGothic.eot) format('eot')
+    }
+    @media(max-width:1000px){
+        img{
+            width:100%;
+        }
+    }
+    @media(max-width:700px){
+        h1{
+            padding-top:30px;
+            font-size:50px;
+        }
+        #grid{
+            display:block;
+        }
+        html, body, div, ol{
+            height:auto;
+        }
+        ol{
+            display:block;
+            border-right:none;
+        }
     }
