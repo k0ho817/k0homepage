@@ -17,6 +17,31 @@
 
 </head>
 <body>
+    <input class="button" type="button" value="Dark" onclick="
+        var target = document.querySelector('body');
+        var lst = document.querySelectorAll('a');
+        var i = 0
+        if (this.value === 'Dark'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            while(i < lst.length){
+                lst[i].style.color = 'white';
+                i = i + 1;
+            }
+            this.value = 'light'
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            while(i < lst.length){
+                lst[i].style.color = 'black';
+                i = i + 1;
+            }
+            this.value = 'Dark';
+        }
+    ">
+    <span class="button">
+    테마 변경 ->
+    </span>
 <h1 class="preset"><a href="home.html">Kyoungho's homepage</a></h1>
 <div id="grid">
     <ol class="preset">
@@ -33,11 +58,10 @@
         <li><a href="feedback.html"><p>feedback</p></a> </li>
     </ol>
     <div id="a">
-        <h2>2019-08-06</h2>
+        <h2>2019-08-07</h2>
         <ul>
-            <li>tawk 실시간 채팅 기능 추가</li>
-            <li>google analytics 사이트 방문자 분석기 기능 추가</li>
-            <li>CSS를 이용하여 사이트 UI 전면 개선</li>
+            <li>JavaScript를 이용한 테마 변경 버튼 우측 상단에 제작</li>
+            <li>백그라운드 이미지 임시 변경</li>
         </ul>
     </div>
 </div>

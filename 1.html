@@ -15,39 +15,64 @@
 </script>
 </head>
 <body>
-<h1 class="preset"><a href="home.html">Kyoungho's homepage</a></h1>
-<div id="grid">
-    <ol class="preset">
-        <li><a href="1.html"><p>about me</p></a></li>
-        <li><a href="version.html"><p>develop</p></a> </li>
-        <li><a href="feedback.html"><p>feedback</p></a> </li>
-    </ol>
-    <div id="a">
-    <h2>자기소개</h2>
-    <p>이름 : 문경호</p>
-    <p>나이 : 21세 (만 19세)</p>
-    <p>생년월일 : 1999년 08월 17일</p>
-    <p>지역 : 서울</p>
-        <p>취미 : 코딩, 스케이트보드, 애니감상, <u>술먹기</u></p>
-    <p>서울 신현초등학교 졸업(2012)<br>
-    서울 신현중학교 졸업(2015)<br>
-    서울 신현고등학교 졸업(2018)<br>
-    국립 한국교통대학교 재학</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/K3B4--8nL7o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <input class="button" type="button" value="Dark" onclick="
+        var target = document.querySelector('body');
+        var lst = document.querySelectorAll('a');
+        var i = 0
+        if (this.value === 'Dark'){
+            target.style.backgroundColor='black';
+            target.style.color='white';
+            while(i < lst.length){
+                lst[i].style.color = 'white';
+                i = i + 1;
+            }
+            this.value = 'light'
+        } else {
+            target.style.backgroundColor='white';
+            target.style.color='black';
+            while(i < lst.length){
+                lst[i].style.color = 'black';
+                i = i + 1;
+            }
+            this.value = 'Dark';
+        }
+    ">
+    <span class="button">
+    테마 변경 ->
+    </span>
+    <h1 class="preset"><a href="home.html">Kyoungho's homepage</a></h1>
+    <div id="grid">
+        <ol class="preset">
+            <li><a href="1.html"><p>about me</p></a></li>
+            <li><a href="version.html"><p>develop</p></a> </li>
+            <li><a href="feedback.html"><p>feedback</p></a> </li>
+        </ol>
+        <div id="a">
+            <h2>자기소개</h2>
+            <p>이름 : 문경호</p>
+            <p>나이 : 21세 (만 19세)</p>
+            <p>생년월일 : 1999년 08월 17일</p>
+            <p>지역 : 서울</p>
+            <p>취미 : 코딩, 스케이트보드, <u>술먹기</u></p>
+            <p>서울 신현초등학교 졸업(2012)<br>
+            서울 신현중학교 졸업(2015)<br>
+            서울 신현고등학교 졸업(2018)<br>
+            국립 한국교통대학교 재학</p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/K3B4--8nL7o" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
     </div>
-</div>
-<!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/5d48dcf6e5ae967ef80e9aad/default';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+        var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+        s1.async=true;
+        s1.src='https://embed.tawk.to/5d48dcf6e5ae967ef80e9aad/default';
+        s1.charset='UTF-8';
+        s1.setAttribute('crossorigin','*');
+        s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>
