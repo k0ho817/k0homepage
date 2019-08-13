@@ -4,6 +4,8 @@
     <title>kyoungho's homepage - home</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="colors.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-145174923-1"></script>
 <script>
@@ -17,28 +19,7 @@
 
 </head>
 <body>
-    <input class="button" type="button" value="Dark" onclick="
-        var target = document.querySelector('body');
-        var lst = document.querySelectorAll('a');
-        var i = 0
-        if (this.value === 'Dark'){
-            target.style.backgroundColor='black';
-            target.style.color='white';
-            while(i < lst.length){
-                lst[i].style.color = 'white';
-                i = i + 1;
-            }
-            this.value = 'light'
-        } else {
-            target.style.backgroundColor='white';
-            target.style.color='black';
-            while(i < lst.length){
-                lst[i].style.color = 'black';
-                i = i + 1;
-            }
-            this.value = 'Dark';
-        }
-    ">
+    <input class="button" type="button" value="Dark" onclick="Switch(this)">
     <span class="button">
     테마 변경 ->
     </span>
